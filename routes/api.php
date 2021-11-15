@@ -27,3 +27,7 @@ Route::post('register', [UsersController::class, 'register']);
 Route::post('reset-password', [UsersController::class, 'resetPassword']);
 Route::post('students-query', [StudentsController::class, 'studentsAPI']);
 
+Route::get('get-all-students', [StudentsController::class, 'getAllStudents']);
+Route::get('get-student', [StudentsController::class, 'getStudent']);
+Route::get('search-student', [StudentsController::class, 'searchStudent']);
+
